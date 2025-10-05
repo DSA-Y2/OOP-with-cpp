@@ -1,0 +1,61 @@
+[+] Exercises
+
+[-] 1. Create a class Student with:
+Attributes: name, age, grade
+Method: displayInfo() that prints all details 
+
+
+[-] 2. Create a class Car with:
+Attributes: brand, model, year
+A constructor to initialize all of them
+A method display() to print car details
+
+[-] 3. Create a class BankAccount with:
+Private attributes: balance
+Public methods:
+deposit(int amount)
+withdraw(int amount)
+getBalance()
+
+[-] 4.Create a base class Animal with:
+Attribute: name
+Method: makeSound()
+Then create derived classes:
+Dog → prints “Woof!”
+Cat → prints “Meow!”
+
+[-] 5.Use the same Animal, Dog, and Cat classes.
+Make makeSound() a virtual function in the base class and override it in the derived classes.
+
+[-] 6.Create an abstract class Shape with:
+Pure virtual function area()
+Then make two derived classes:
+Circle (area = πr²)
+Rectangle (area = l × w)
+
+[-] 7. Final combining all
+
+Class 1: Account (Base Class)
+Protected attributes: name, balance
+Public: constructor, deposit(), withdraw(), displayBalance()
+Class 2: SavingsAccount (Derived Class)
+Extra attribute: interestRate
+Method: addInterest()
+Class 3: CurrentAccount (Derived Class)
+Extra attribute: overdraftLimit
+Overridden withdraw() method to allow overdraft (but with limit)
+
+[-] 8. Complex one
+Base class: Account (abstract)
+Attributes: name (string), balance (double) → private/protected
+Pure virtual function: displayAccountInfo() → abstraction
+Methods: deposit(double), withdraw(double) → encapsulation
+Derived class: SavingsAccount
+Extra attribute: interestRate
+Method: addInterest()
+Override displayAccountInfo()
+Derived class: CurrentAccount
+Extra attribute: overdraftLimit
+Override withdraw() to allow overdraft
+Override displayAccountInfo()
+Use polymorphism with base class pointer to display info for multiple accounts.
